@@ -19,6 +19,7 @@ print("Sample Space:")
 print(sample_space)
 print("Number of Outcomes =", len(sample_space))
 
+formula : Number of outcomes for n coins: 2ⁿ
 
 2) Find the sample space of n dice tossed.
 Code :
@@ -35,7 +36,7 @@ print("Sample Space:")
 print(sample_space)
 print("Number of Outcomes =", len(sample_space))
 
-
+formula : Number of outcomes for n dice: 6ⁿ
 3) Find the sample space when a coin is tossed followed by a dice.
 Code : 
 
@@ -44,7 +45,7 @@ sample_space = [(coin, die)
             for die in range(1, 7)]
 print(sample_space)
 
-
+formula : Coin followed by a die: 2 × 6 = 12
 
 
 
@@ -92,6 +93,7 @@ print("Event (Sum is divisible by 3):")
 print(divisible_by_3)
 print("Number of outcomes =", len(divisible_by_3))
 
+Formula : Probability of an event: P(E) = Number of favourable outcomes / Total number of outcomes
 
 2)Three coins are tossed find the sample point of the event
 Sample space  = ["HHH", "HHT", "HTH", "HTT",  "THH", "THT", "TTH", "TTT"]
@@ -108,7 +110,7 @@ event = [(c1, c2, c3)
 print("Event (at least 1 head):")
 print(event)
 print("Number of outcomes =", len(event))
-
+ formula : At least one Head: P(At least 1 Head) = 1 − P(No Head)
 
 (b) no heads
 Code :
@@ -121,6 +123,7 @@ print("No Heads:")
 print(event)
 print("Number of outcomes =", len(event))
 
+Formula :  No Head in n coin tosses: P(No Head) = (1/2)ⁿ
 
 (c) At the most one head
 Code :
@@ -133,6 +136,10 @@ for outcome in sample_space:
 print("At Most One Head:")
 print(event)
 print("Number of outcomes =", len(event))
+
+Formula : At most one Head: P(At most 1 Head) = P(0 Head) + P(1 Head)
+
+
 
 
 # PRACTICAL NO.: 03
@@ -207,7 +214,10 @@ for i in range(trials):
 experimental_probability = success / trials
 print("Experimental Probability =", experimental_probability)
 
-
+formula :
+1. Theoretical probability: P(E) = Number of favourable outcomes / Total number of outcomes
+2. Experimental probability: P(E) = Number of times event occurs / Total number of trials
+3. Comparison: Experimental probability ≈ Theoretical probability (for a large number of trials)
 
 
 
@@ -225,6 +235,8 @@ if P_A_intersection_B == P_A * P_B:
     print("The events A and B are independent.")
 else: 
     print("The events A and B are not independent.")
+
+formula : 1. Probability of A: P(A) = Number of outcomes in A / Total outcomes
 
 
 2. A die is rolled once. Let:
@@ -250,7 +262,7 @@ if P_A_intersection_B == P_A * P_B:
 else:
     print("A and B are not independent.")
 
-
+Formula :  Probability of B: P(B) = Number of outcomes in B / Total outcomes
 
 3.  A card is drawn from a standard deck of 52 cards.
 A: Card is a King
@@ -268,6 +280,7 @@ print("P(B) =", P_B)
 print("P(A∩B) =", P_A_intersection_B)
 print("P(A|B) =", P_A_given_B)
 
+formula : . Joint probability: P(A ∩ B) = Number of outcomes in A ∩ B / Total outcomes
 
 
 4. A bag contains 5 red, 3 blue, and 2 green balls. One ball is drawn.
@@ -287,9 +300,9 @@ print("P(B) =", P_B)
 print("P(A∩B) =", P_A_intersection_B)
 print("P(A|B) =", P_A_given_B)
 
+formula : Conditional probability: P(A | B) = P(A ∩ B) / P(B)
 
-
-Develop a Python program that reads:
+5. Develop a Python program that reads:
 Total number of outcomes
 Number of outcomes in event A
 Number of outcomes in event B
@@ -310,7 +323,7 @@ print("P(B) =", P_B)
 print("P(A|B) =", P_A_given_B)
 print("P(B|A) =", P_B_given_A)
 
-
+formula : Conditional probability: P(B | A) = P(A ∩ B) / P(A) 
 
 6. Simulate tossing two coins 10,000 times using Python. Estimate:
 P(A): First coin is Head
@@ -344,7 +357,7 @@ if abs(P_AB - (P_A * P_B)) < 0.01:
 else:
     print("The events are not independent.")
 
-
+formula : Independent events: P(A ∩ B) = P(A) × P(B)
 
 7. Generate 100 random integers between 1 and 50 using NumPy. Find:
 Probability of obtaining an even number.
@@ -366,7 +379,7 @@ print("P(Even) =", P_even)
 print("P(Multiple of 5) =", P_multiple5)
 print("P(Even | Multiple of 5) =", P_even_given_multiple5)
 
-
+formula :  Simulation probability: P(E) = Number of successful outcomes / Number of trials
 
 8. Write a Python program to calculate conditional probability using user-defined functions.
 Code :
@@ -409,11 +422,6 @@ else:
 
 
 
-
-
-
-
-
 # PRACTICAL NO.: 05
 Aim : To verify important probability theorems using Python.
 
@@ -435,7 +443,8 @@ if P_A_union_B == (P_A + P_B - P_A_intersection_B):
     print("\nAddition Theorem Verified!")
 else:
     print("\nAddition Theorem Not Verified!")
-
+    
+ formula :  Addition theorem: P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
 
 2. Write a Python program to verify the Multiplication Theorem for independent events.
 Code :
@@ -454,7 +463,7 @@ if abs(product - P_A_intersection_B) < 0.0001:
 else:
     print("Multiplication Theorem Not Verified!")
 
-
+formula : Multiplication theorem for independent events: P(A ∩ B) = P(A) × P(B)
 
 3. Write a Python program that computes P(A∪B) using given values of P(A), P(B), and P(A∩B).
 Code :
@@ -572,6 +581,10 @@ P_D_given_positive = (P_pos_given_D * P_D) / P_positive
 print("Probability of Positive Test =", P_positive)
 print("Probability of Disease given Positive Test =", P_D_given_positive)
 
+formula
+3.Bayes' theorem: P(A | B) = [P(B | A) × P(A)] / P(B)
+4. Total probability (used in Bayes example): P(B) = P(B | A)P(A) + P(B | Ā)P(Ā)
+
 
 
 
@@ -595,7 +608,8 @@ print("\nSum of all probabilities =", total_probability)
 expected_value = sum(x * p for x, p in pmf.items())
 print("Expected Value E(X) =", expected_value)
 
-
+pmf formula : PMF condition: Σ P(X = x) = 1
+ 
 
 2. A fair die is rolled once. Let X be the number appearing on the upper face.
 Tasks:
@@ -620,7 +634,7 @@ print("\nSum of all probabilities =", total_probability)
 expected_value = sum(x * p for x, p in pmf.items())
 print("Expected Value E(X) =", expected_value)
 
-
+Expected value / Mean: E(X) = Σ x P(X = x)
 
 3. Two fair coins are tossed simultaneously. Let X be the number of heads obtained.
 Tasks:
@@ -651,7 +665,7 @@ else:
 E = (0 * p0) + (1 * p1) + (2 * p2)
 print("\nExpected Value E(X) =", E)
 
-
+formula : Expected value / Mean: E(X) = Σ x P(X = x)
 
 4. A box contains 3 red, 4 blue, and 5 green balls.One ball is selected at random.
 Define
@@ -687,7 +701,7 @@ expected_value = sum(x * p for x, p in pmf.items())
 print("Expected Value E(X) =", expected_value)
 
 
-
+formula : Expected value / Mean: E(X) = Σ x P(X = x)
 
 
 
@@ -836,8 +850,11 @@ print(df.sum(axis=1))
 print("\nMarginal Probability of Arrival Time:")
 print(df.sum(axis=0))
 
-
-
+formula : 
+1. Marginal probability of X: P(X = x) = Σᵧ P(X = x, Y = y)
+2. Marginal probability of Y: P(Y = y) = Σₓ P(X = x, Y = y)
+3. Row marginal: Marginal row probability = Sum of each row
+4. Column marginal: Marginal column probability = Sum of each column
 
 
 
@@ -863,6 +880,12 @@ print("E(X^2) =", E_X2)
 print("E(X^3) =", E_X3)
 print("E(X^4) =", E_X4)
 
+formulas : 
+1. First raw moment / Mean: μ′₁ = E(X) = Σ xP(x)
+2. Second raw moment: μ′₂ = E(X²) = Σ x²P(x)
+3. Third raw moment: μ′₃ = E(X³) = Σ x³P(x)
+4. Fourth raw moment: μ′₄ = E(X⁴) = Σ x⁴P(x)
+
 
 
 2. For the distribution:
@@ -878,6 +901,11 @@ for r in range(1, 5):
     moment = sum((x**r) * p for x, p in zip(X, P))
     print(f"{r}th Raw Moment =", moment)
 
+formulas : 
+1. First raw moment / Mean: μ′₁ = E(X) = Σ xP(x)
+2. Second raw moment: μ′₂ = E(X²) = Σ x²P(x)
+3. Third raw moment: μ′₃ = E(X³) = Σ x³P(x)
+4. Fourth raw moment: μ′₄ = E(X⁴) = Σ x⁴P(x)
 
 
 3. Write a Python program to calculate the second, third, and fourth central moments for any discrete probability distribution.
@@ -896,6 +924,11 @@ print("Mean =", mean)
 print("2nd Central Moment =", mu2)
 print("3rd Central Moment =", mu3)
 print("4th Central Moment =", mu4)
+
+formulas :
+1. Second central moment: μ₂ = Σ (x − μ)²P(x)
+2. Third central moment: μ₃ = Σ (x − μ)³P(x)
+3. Fourth central moment: μ₄ = Σ (x − μ)⁴P(x)
 
 
 
@@ -919,6 +952,10 @@ print("4th Central Moment =", mu4)
 print("Skewness =", skewness)
 print("Kurtosis =", kurtosis)
 
+formula :
+1.  Skewness: Skewness = μ₃ / (μ₂)^(3/2)
+2.  Kurtosis: Kurtosis = μ₄ / (μ₂)²
+
 
 
 
@@ -937,7 +974,7 @@ p = 0.5
 x = 4
 P = comb(n, x) * (p ** x) * ((1 - p) ** (n - x))
 print("P(X = 4) =", P)
-
+ formula : Binomial distribution – PMF: P(X = x) = (nCx) pˣ qⁿ⁻ˣ
 
 2. A call center receives an average of 4 calls per minute. Find the probability of receiving exactly 6 calls in one minute using Poisson’s distributions.
 Code :
@@ -948,7 +985,7 @@ x = 6
 P = (exp(-lam) * lam ** x) / factorial(x)
 print("P(X = 6) =", P)
 
-
+formula :  Poisson distribution – PMF: P(X = x) = e⁻λ λˣ / x!
 
 3. A multiple-choice test contains 10 questions, each with 4 options. If a student guesses every answer, find the probability of getting exactly 3 correct answers.
 Code :
@@ -960,7 +997,7 @@ x = 3
 P = comb(n, x) * (p ** x) * ((1 - p) ** (n - x))
 print("P(X = 3) =", P)
 
-
+formula : Binomial distribution – PMF: P(X = x) = (nCx) pˣ qⁿ⁻ˣ
 4. For a Binomial distribution with n = 20 and p = 0.3, use Python to find:
       (i)P(X=5)
      (ii) P(X≤5)
@@ -1002,6 +1039,11 @@ print("(iii) P(X >= 5) =", P_X_ge_5)
 print("(iv)  Mean      =", mean)
 print("(v)   Variance  =", variance)
 
+Formula :
+Binomial distribution – PMF: P(X = x) = (nCx) pˣ qⁿ⁻ˣ
+Mean : E(X)=np
+Variance : Var(X)=npq 
+
 5. A website receives an average of 5 complaints per day. Find the probability of receiving exactly 2 complaints on a particular day (Poisson’s distributions)
 Code :
 from math import factorial, exp
@@ -1010,7 +1052,7 @@ x = 2
 P = (exp(-lam) * lam ** x) / factorial(x)
 print("P(X = 2) =", P)
 
-
+Formula : Poisson distribution – PMF: P(X = x) = e⁻λ λˣ / x!
 
 
 
@@ -1030,7 +1072,7 @@ x = 4
 probability = (q ** (x - 1)) * p
 print("Probability of first Head on 4th toss =", probability)
 
-
+formula : Geometric distribution : PMF: P(X = x) = q⁽ˣ⁻¹⁾p
 
 2. A die is rolled repeatedly. Find the probability that the first 6 occurs on the 5th roll.
 Code :
@@ -1042,7 +1084,7 @@ x = 5
 probability = (q ** (x - 1)) * 
 print("Probability of first 6 on 5th roll =", probability)
 
-
+formula : Geometric distribution : PMF: P(X = x) = q⁽ˣ⁻¹⁾p
 
 3. A salesperson has a 20% probability of making a sale on each call. Find the probability that the first sale occurs on the 6th call.
 Code :
@@ -1054,6 +1096,7 @@ x = 6
 probability = (q ** (x - 1)) * p
 print("Probability of first sale on 6th call =", probability)
 
+formula : Geometric distribution : PMF: P(X = x) = q⁽ˣ⁻¹⁾p
 
 
 4. A box contains 20 products, including 5 defective products. If 4 products are selected without replacement, find the probability of selecting exactly 2 defective products.
@@ -1065,9 +1108,12 @@ K = 5
 n = 4
 x = 2
 probability = (math.comb(K, x) * math.comb(N-K, n-x)) / math.comb(N, n)
-print("Probability of exactly 2 defective products =", probability)
+print("Probability of exactly 2 defective products =", probability) 
+
+Formula : Combination/coefficient : C(a,b) = a! / [b!(a−b)!]
 
 
+Formula : Hypergeometric :  PMF: P(X = x) = [(KCx) (N−KCn−x)] / (NCn)
 5. A class has 30 students, of which 12 are girls. If 5 students are selected randomly without replacement, find the probability of selecting exactly 3 girls.
 Code :
 
@@ -1078,3 +1124,5 @@ n = 5
 x = 3
 probability = (math.comb(K, x) * math.comb(N-K, n-x)) / math.comb(N, n)
 print("Probability of exactly 3 girls =", probability)
+
+ Formula : Hypergeometric : PMF: P(X = x) = [(KCx) (N−KCn−x)] / (NCn)
