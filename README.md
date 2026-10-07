@@ -152,10 +152,10 @@ import random
 n = 1000
 favorable = 0
 for i in range(n):
-c1 = random.choice(['H', 'T'])
-c2 = random.choice(['H', 'T'])
-c3 = random.choice(['H', 'T'])
-if c1 == 'H' or c2 == 'H' or c3 == 'H':
+    c1 = random.choice(['H', 'T'])
+    c2 = random.choice(['H', 'T'])
+    c3 = random.choice(['H', 'T'])
+    if c1 == 'H' or c2 == 'H' or c3 == 'H':
                favorable += 1
 experimental_probability = favorable / n
 print("Experimental Probability =",
@@ -169,9 +169,9 @@ import random
 n = 200
 favorable = 0
 for i in range(n):
-roll = random.randint(1, 6)
-if roll % 2 == 0:
-favorable += 1
+    roll = random.randint(1, 6)
+    if roll % 2 == 0:
+        favorable += 1
 experimental_probability = favorable / n
 print("Number of favorable outcomes:", favorable)
 print("Experimental Probability =",
@@ -184,14 +184,15 @@ import random
 n = 200
 favorable = 0
 for i in range(n):
-card = random.randint(1, 52)
+    card = random.randint(1, 52)
 # Cards numbered 1–13 represent hearts
-if 1 <= card <= 13:
-favorable += 1
+    if 1 <= card <= 13:
+        favorable += 1
 experimental_probability = favorable / n
 print("Number of favorable outcomes:", favorable)
 print("Experimental Probability =",
 experimental_probability)
+
 
 d) An integer is chosen at random from 200 digits. Compute the theoretical and experimental probability that it is divisible by 6
 Code :-
@@ -213,6 +214,7 @@ for i in range(trials):
         success += 1
 experimental_probability = success / trials
 print("Experimental Probability =", experimental_probability)
+
 
 formula :
 1. Theoretical probability: P(E) = Number of favourable outcomes / Total number of outcomes
