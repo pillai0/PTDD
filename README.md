@@ -77,7 +77,7 @@ for i in range(1, 7):
 
 print("Event (Sum is a Perfect Square):")
 print(perfect_square)
-print("Number of outcomes =", len(perfect_square)
+print("Number of outcomes =", len(perfect_square))
 
 
 (c) the sum is divisible by 3
