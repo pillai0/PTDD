@@ -1,3 +1,292 @@
+# Practical no. 1:
+
+AIM: To Understand the concepts of trial, random experiment, sample point and sample space using python.
+1) Find the sample space of n coins tossed.
+2) Find the sample space of n dice tossed.
+3) Find the sample space when a coin is tossed followed by a dice.
+
+=============================================================================================================================================================================================
+
+# Practical NO.2:
+
+AIM: To illustrate different types of events using python.
+
+1)Two dice are thrown. Find the sample space of the event so that
+(a) the sum is neither 7 nor 11.
+(b) the sum is a perfect square.
+(c) the sum is divisible by 3
+
+2)Three coins are tossed find the sample point of the event
+(a) at least 1 heads
+(b) no heads
+(c) At the most one head
+
+=============================================================================================================================================================================================
+
+# Practical No.3
+
+AIM: Compute probability theoretically and compare with experimental probability
+
+a) Three coins are tossed simultaneously. Compute the theoretical probability and experimental
+probability of getting at least one head, and compare the results.
+
+b) A die is rolled 200 times. Compute the theoretical and experimental probability of getting an even
+number and compare the results.
+
+c) A card is drawn from a deck of 52 cards. Compute the theoretical and experimental probability of
+drawing a heart and comparing the results.
+
+d) An integer is chosen at random from 200 digits. Compute the theoretical and experimental
+probability that it is divisible by 6
+
+=============================================================================================================================================================================================
+
+# Practical No.4
+
+AIM: To compute conditional probability and verify independence of events using Python.
+
+1) Given P(A)=0.4, P(B)=0.6 and P(A∩B)=0.24, write a Python program to verify whether the events are independent.
+
+2) A die is rolled once. Let:
+● A: Getting an even number
+● B: Getting a number greater than 3
+
+Write a Python program to calculate:
+● P(A)
+● P(B)
+● P(A∩B)
+● P(A∣B)
+● Check whether A and B are independent.
+
+3) A card is drawn from a standard deck of 52 cards.
+● A: Card is a King
+● B: Card is a Face Card
+Write a Python program to calculate the conditional probability P(A∣B).
+
+4) A bag contains 5 red, 3 blue, and 2 green balls. One ball
+is drawn.
+● A: Ball is red
+● B: Ball is not green
+Write a Python program to compute P(A∣B)
+
+5) Develop a Python program that reads:
+● Total number of outcomes
+● Number of outcomes in event A
+● Number of outcomes in event B
+● Number of outcomes in A∩B
+Then calculate:
+● P(A)
+● P(B)
+● P(A∣B)
+● P(B∣A)
+
+6) Simulate tossing two coins 10,000 times using Python.
+Estimate:
+● P(A): First coin is Head
+● P(B): Second coin is Head
+● P(A∩B)
+● Verify whether the events are independent.
+
+7) Generate 100 random integers between 1 and 50 using
+NumPy. Find:
+● Probability of obtaining an even number.
+● Probability of obtaining a multiple of 5.
+● Conditional probability of an even number given that it is a multiple of 5.
+
+8) Write a Python program to calculate conditional probability using user-defined functions.
+
+9) Write a Python program to verify the multiplication rule for independent events.
+
+=============================================================================================================================================================================================
+
+# Practical NO.5
+
+AIM: To verify important probability theorems using Python.
+
+Practice Questions:
+1. Write a Python program to verify the Addition Theorem of Probability.
+
+2. Write a Python program to verify the Multiplication Theorem for independent events.
+
+3. Write a Python program that computes P(A∪B)P using given values of P(A), P(B), and P(A∩B).
+
+4. Write a Python program to determine whether two events are independent.
+
+5. Roll two dice and verify the Multiplication Theorem for independent outcomes.
+
+6.A card is drawn from a deck of 52 cards. Verify the Addition Theorem for:
+● Event A: Drawing a King
+● Event B: Drawing a Heart
+
+7. A disease affects 1% of the population.
+● Probability of having the disease = 0.01
+● Test sensitivity = 0.99 (positive if disease is present)
+● False positive rate = 0.05
+
+Task:
+Write a Python program to calculate the probability that a person actually has the disease if
+the test result is positive using Bayes&#39; Theorem.
+
+=============================================================================================================================================================================================
+
+# Practical No.6
+
+AIM: To understand the concept of a random variable and Probability Mass Function (PMF) using Python.
+
+Practice Questions:
+1.A bag contains 5 balls numbered 1, 2, 3, 4, and 5. One ball is selected at random.
+Let the random variable X denote the number on the selected ball.
+1. Find the Probability Mass Function (PMF) of X.
+2. Verify that the sum of all probabilities is equal to 1.
+3. Calculate the Expected Value E(X).
+
+2. A fair die is rolled once. Let X be the number appearing on the upper face.
+Tasks:
+1. Define the random variable X.
+2. Construct the PMF.
+3. Verify that the sum of probabilities equals 1.
+4. Find the expected value E(X).
+5. Write a Python program to display the PMF.
+
+3. Two fair coins are tossed simultaneously. Let X be the number of heads obtained.
+Tasks:
+1. List the sample space.
+2. Find the PMF.
+3. Verify the probabilities sum to 1.
+4. Calculate the expected value.
+5. Write a Python program to represent the PMF.
+
+4. A box contains 3 red, 4 blue, and 5 green balls.One ball is selected at random.
+Define:
+● X=1 for Red
+● X=2 for Blue
+● X=3 for Green
+Tasks:
+1. Find the PMF.
+2. Verify the probabilities.
+3. Calculate the expected value.
+
+=============================================================================================================================================================================================
+
+# Practical No.7
+
+AIM: To study the joint and marginal probability function using python.
+
+Practice Questions
+1. The following joint probability table represents the probability of students obtaining a particular grade based on attendance.
+
+Attendance Grade A  Grade B  Grade C
+High       0.25     0.15     0.10
+Medium     0.10     0.20     0.05
+Low        0.05     0.05     0.05
+
+Tasks:
+1. Create the joint probability table in Python.
+2. Find the marginal probability of Attendance.
+3. Find the marginal probability of Grades.
+
+2.
+Weather   Light  Moderate  Heavy
+Sunny     0.18   0.10      0.02
+Cloudy    0.12   0.15      0.08
+Rainy     0.05   0.12      0.18
+
+Tasks:
+1. Store the table in Python.
+2. Calculate row-wise marginal probabilities.
+3. Calculate column-wise marginal probabilities.
+
+3. Employee Department and Performance Rating
+
+Department Excellent Good  Average
+HR         0.10      0.08  0.07
+Sales      0.12      0.15  0.08
+IT         0.18      0.12  0.10
+
+Tasks:
+1. Find row marginal probabilities.
+2. Find column marginal probabilities.
+
+4. Day of Week and Gym Visit
+Day      Morning  Evening
+Weekday  0.30     0.25
+Weekend  0.20     0.25
+
+Tasks:
+1. Create the joint probability matrix.
+2. Find marginal probabilities for Day.
+3. Find marginal probabilities for Time.
+
+5. The probabilities are:
+ Bus & On Time = 0.30
+ Bus & Late = 0.10
+ Train & On Time = 0.25
+ Train & Late = 0.05
+ Bike & On Time = 0.20
+ Bike & Late = 0.10
+
+Tasks:
+1. Find the marginal probability of Transport.
+2. Find the marginal probability of Arrival Time.
+
+=============================================================================================================================================================================================
+
+# Practical No.8
+
+AIM:To compute raw moments, central moments, skewness, and kurtosis for a discrete random variable
+
+1. A discrete random variable X has values {1,2,3,4} with probabilities 0.1,0.2,0.4and 0.3 respectively. Calculate using python E(x) ,E(X^2), E(X^3) and E(X^4).
+
+2 For the distribution:
+X     0    1    2    3
+P(X)  0.2  0.3  0.3  0.2
+Write Python code to calculate the first four raw moments.
+
+3. Write a Python program to calculate the second, third, and fourth central moments for any discrete probability distribution.
+
+4. For X ={1,2,3,4,5} with probabilities { 0.05 , 0.15, 0.3,0.4,0.1}, Calculate the skewness and Kurtosis.
+
+=============================================================================================================================================================================================
+
+# Practical No.9
+
+AIM: To study the Binomial and Poisson probability distributions using Python and calculate their probability mass functions (PMFs)
+
+1. Find the probability of obtaining exactly 4 heads in 10 tosses of a fair coin.
+
+2. A call center receives an average of 4 calls per minute. Find the probability of receiving exactly 6 calls in one minute using Poisson’s distributions.
+
+3. A multiple-choice test contains 10 questions, each with 4 options. If a student guesses every answer, find the probability of getting exactly 3 correct answers.
+
+4. For a Binomial distribution with n = 20 and p = 0.3, use Python to find:
+(i) P(X=5)
+(ii) P(X≤5)
+(iii) P(X≥5)
+(iv) mean
+(v) variance.
+
+5. A website receives an average of 5 complaints per day. Find the probability of receiving exactly 2 complaints on a particular day (Poisson’s distributions)
+
+=============================================================================================================================================================================================
+
+# Practical No.10
+
+AIM: To study the Geometric and Hypergeometric probability distributions using Python and calculate their probability mass functions (PMFs)
+
+1. A fair coin is tossed repeatedly. Find the probability that the first Head occurs on the 4th toss.
+
+2. A die is rolled repeatedly. Find the probability that the first 6 occurs on the 5th roll.
+
+3. A salesperson has a 20% probability of making a sale on each call. Find the probability that the first sale occurs on the 6th call.
+
+4. A box contains 20 products, including 5 defective products. If 4 products are selected without replacement, find the probability of selecting exactly 2 defective products.
+
+5. A class has 30 students, of which 12 are girls. If 5 students are selected randomly without replacement, find the probability of selecting exactly 3 girls.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # PRACTICAL NO.: 01
 AIM : To understand the concepts of trial, random experiment, sample point, and sample space using Python.
 1) Find the sample space of n coins tossed.
@@ -115,6 +404,7 @@ print("Number of outcomes =", len(event))
 (b) no heads
 Code :
 
+sample_space  = ["HHH", "HHT", "HTH", "HTT",  "THH", "THT", "TTH", "TTT"]
 event = []
 for outcome in sample_space:
     if outcome.count("H") == 0:
@@ -123,11 +413,13 @@ print("No Heads:")
 print(event)
 print("Number of outcomes =", len(event))
 
+
 Formula :  No Head in n coin tosses: P(No Head) = (1/2)ⁿ
 
 (c) At the most one head
 Code :
 
+sample_space  = ["HHH", "HHT", "HTH", "HTT",  "THH", "THT", "TTH", "TTT"]
 event = []
 for outcome in sample_space:
     if outcome.count("H") <= 1:
@@ -155,7 +447,7 @@ for i in range(n):
     c1 = random.choice(['H', 'T'])
     c2 = random.choice(['H', 'T'])
     c3 = random.choice(['H', 'T'])
-    if c1 == 'H' or c2 == 'H' or c3 == 'H':
+if c1 == 'H' or c2 == 'H' or c3 == 'H':
                favorable += 1
 experimental_probability = favorable / n
 print("Experimental Probability =",
@@ -177,6 +469,7 @@ print("Number of favorable outcomes:", favorable)
 print("Experimental Probability =",
 experimental_probability)
 
+
 c) A card is drawn from a deck of 52 cards. Compute the theoretical and experimental probability of drawing a heart and compare the results.
 Code : 
 
@@ -185,7 +478,6 @@ n = 200
 favorable = 0
 for i in range(n):
     card = random.randint(1, 52)
-# Cards numbered 1–13 represent hearts
     if 1 <= card <= 13:
         favorable += 1
 experimental_probability = favorable / n
@@ -215,7 +507,6 @@ for i in range(trials):
 experimental_probability = success / trials
 print("Experimental Probability =", experimental_probability)
 
-
 formula :
 1. Theoretical probability: P(E) = Number of favourable outcomes / Total number of outcomes
 2. Experimental probability: P(E) = Number of times event occurs / Total number of trials
@@ -237,6 +528,7 @@ if P_A_intersection_B == P_A * P_B:
     print("The events A and B are independent.")
 else: 
     print("The events A and B are not independent.")
+
 
 formula : 1. Probability of A: P(A) = Number of outcomes in A / Total outcomes
 
@@ -367,6 +659,8 @@ Probability of obtaining a multiple of 5.
 Conditional probability of an even number given that it is a multiple of 5.
 Code :
 
+If agar ye code run nahi hua toh cmd me (pip install numpy) ye likh kr enter dabana chutiyo
+
 import numpy as np
 numbers = np.random.randint(1, 51, 100)
 even = np.sum(numbers % 2 == 0)
@@ -494,6 +788,8 @@ else:
 
 5. Roll two dice and verify the Multiplication Theorem for independent outcomes.
 Code :
+
+Ye wale me output me double digit dalna hain 
 
 import random
 n = int(input("Enter number of trials: "))
@@ -724,6 +1020,8 @@ Find the marginal probability of Attendance.
 Find the marginal probability of Grades. 
 Code :
 
+Isme me cmd me (pip install pandas) likhna hain cmd me if run nahi hua toh
+
 import pandas as pd
 data = {
     "Grade A": [0.25, 0.10, 0.05],
@@ -816,7 +1114,7 @@ data = {
 }
 day = ["Weekday", "Weekend"]
 
-df = pd.DataFrame(data, index=day
+df = pd.DataFrame(data, index=day)
 print("Joint Probability Table:")
 print(df)
 print("\nMarginal Probability for Day:")
@@ -1083,8 +1381,9 @@ import math
 p = 1/6
 q = 1 - p
 x = 5
-probability = (q ** (x - 1)) * 
+probability = (q ** (x - 1)) * p
 print("Probability of first 6 on 5th roll =", probability)
+
 
 formula : Geometric distribution : PMF: P(X = x) = q⁽ˣ⁻¹⁾p
 
